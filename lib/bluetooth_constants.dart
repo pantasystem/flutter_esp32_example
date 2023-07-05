@@ -17,4 +17,6 @@ class BluetoothConstants {
 
   /// FlutterからESP32にWiFiのパスワードを送信するためのキャラクタリスティックのUUID
   static const String wifiPasswordCharacteristicUuid = "bb11fb53-9d60-4f30-af5a-70485a572671";
+
+  static const String wifiConnectionStatusCharacteristicUuid = "747eb891-fc27-4627-bb29-0fdca8376957";
 }
