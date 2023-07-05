@@ -46,11 +46,6 @@ notifyがある理由としては、notifyを行わないと、定期的にread�
 UUID: 30dfe503-7a09-4c5f-9a9f-352d773666d3<br>
 
 Flutter側からESP32に色の情報を送信するためのCharacteristicです。<br>
-色は3種類あって、赤,黄, 青の3色です。<br>
-BLE経由で文字列を送信するのは少し面倒なので、あらかじめ色に数字を割り当てます。<br>
-- 赤: 1
-- 黄: 2
-- 青: 3
 
 ### ESP32からのデータ受信用Characteristic
 UUID: 78b5f08c-a793-4127-9a94-85a246056038<br>

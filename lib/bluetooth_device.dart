@@ -107,6 +107,7 @@ class DeviceScreenState extends State<DeviceScreen> {
       log("wifiStatusCharacteristic is null");
       return;
     }
+    wifiStatusCharacteristic.setNotifyValue(true);
 
     await for (final value in wifiStatusCharacteristic.onValueChangedStream) {
       final connectionStatus = String.fromCharCodes(value);
