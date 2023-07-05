@@ -47,13 +47,10 @@ UUID: 30dfe503-7a09-4c5f-9a9f-352d773666d3<br>
 
 Flutter側からESP32に色の情報を送信するためのCharacteristicです。<br>
 
-### ESP32からのデータ受信用Characteristic
-UUID: 78b5f08c-a793-4127-9a94-85a246056038<br>
+### ESP32からのWiFiの接続状態の受信用Characteristic
+UUID: 747eb891-fc27-4627-bb29-0fdca8376957<br>
 
-ESP32から任意の値(数値)を送信するCharacteristicです。<br>
-このCharacteristicを使って、ESP32からFlutter側にデータを送信します。<br>
-今回はESP32にセンサーなどをつないないでいないので、適当な値を送信していますが、<br>
-本来はESP32から取得したセンサーの値などを送信します。<br>
+ESP32からWiFiの接続状態を受信するためのCharacteristicです。<br>
 また、このCharacteristicはESP32からFlutterに値が変化したことを伝えないといけないので、<br>
 notifyを有効にします。<br>
 
@@ -72,3 +69,7 @@ Bluetoothのデバイス一覧を取得し、表示する実装があるファ�
 
 ## lib/bluetooth_constants.dart
 BluetoothのUUIDなどの定数を定義しているファイルです。<br>
+
+## lib/bluetooth_device.dart
+Bluetoothデバイスに接続後に表示される画面の実装があるファイルです。<br>
+接続状態や、WiFiの接続用のUIなどが実装されています。<br>
